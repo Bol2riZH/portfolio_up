@@ -5,13 +5,11 @@ import {
   Container,
   Cpu,
   FileJson,
-  FileType,
   FolderGit,
   GitBranch,
   Network,
   Slack as ReactLogo,
   Server,
-  Settings,
   Terminal,
   Workflow,
 } from 'lucide-react';
@@ -20,17 +18,19 @@ const skills = [
   {
     category: 'Frontend',
     items: [
-      { name: 'JavaScript', icon: FileJson },
-      { name: 'TypeScript', icon: FileType },
-      { name: 'React', icon: ReactLogo },
-      { name: 'Vue.js', icon: Blocks },
+      { name: 'HTML', icon: Blocks },
+      { name: 'CSS', icon: Blocks },
+      { name: 'JavaScript | TypeScript', icon: FileJson },
+      { name: 'React | Next.js', icon: ReactLogo },
+      { name: 'Vue.js | Nuxt.js', icon: Blocks },
+      { name: 'Tailwind', icon: Blocks },
     ],
   },
   {
     category: 'Backend',
     items: [
-      { name: 'Symfony', icon: Boxes },
-      { name: 'Node.js', icon: Server },
+      { name: 'PHP | Symfony', icon: Boxes },
+      { name: 'Node.js | Express | Nest.js', icon: Server },
       { name: 'API', icon: Network },
       { name: 'SQL', icon: Workflow },
     ],
@@ -39,18 +39,18 @@ const skills = [
     category: 'DevOps',
     items: [
       { name: 'Déploiement', icon: Cpu },
-      { name: 'CI/CD', icon: GitBranch },
       { name: 'Docker', icon: Container },
       { name: 'Git', icon: FolderGit },
+      { name: 'CI/CD', icon: GitBranch },
     ],
   },
   {
-    category: 'Système',
+    category: 'Administration Système',
     items: [
       { name: 'Linux', icon: Terminal },
-      { name: 'Script', icon: Terminal },
+      { name: 'Windows', icon: Terminal },
+      { name: 'Bash', icon: Terminal },
       { name: 'Serveur', icon: Server },
-      { name: 'Configuration', icon: Settings },
     ],
   },
 ];
@@ -67,8 +67,8 @@ const Skills = () => {
         >
           <h2 className='text-4xl font-bold mb-4'>Compétences Techniques</h2>
           <p className='text-zinc-400 max-w-2xl mx-auto'>
-            Une expertise approfondie dans le développement web moderne, du frontend au backend, en passant par le
-            DevOps et l'administration système.
+            Une expertise approfondie dans le développement web moderne, du frontend au backend, en passant par
+            l'administration système.
           </p>
         </motion.div>
 
