@@ -3,7 +3,6 @@ import {
   Blocks,
   Boxes,
   Container,
-  Cpu,
   FileJson,
   FolderGit,
   GitBranch,
@@ -36,11 +35,10 @@ const skills = [
     ],
   },
   {
-    category: 'DevOps',
+    category: 'Déploiement et versionning',
     items: [
-      { name: 'Déploiement', icon: Cpu },
       { name: 'Docker', icon: Container },
-      { name: 'Git', icon: FolderGit },
+      { name: 'Git | GitHub | GitLab', icon: FolderGit },
       { name: 'CI/CD', icon: GitBranch },
     ],
   },
@@ -67,8 +65,8 @@ const Skills = () => {
         >
           <h2 className='text-4xl font-bold mb-4'>Compétences Techniques</h2>
           <p className='text-zinc-400 max-w-2xl mx-auto'>
-            Une expertise approfondie dans le développement web moderne, du frontend au backend, en passant par
-            l'administration système.
+            Une expertise approfondie dans le développement web moderne, du frontend au backend, en passant par le
+            déploiement et l'administration système.
           </p>
         </motion.div>
 
