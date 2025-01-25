@@ -1,14 +1,18 @@
 import { motion } from 'framer-motion';
 import {
-  Blocks,
-  Boxes,
+  Box,
+  BrainCircuit,
+  Code2,
+  Command,
   Container,
-  FileJson,
+  Database,
+  Figma,
+  FileCode,
   FolderGit,
-  GitBranch,
+  Image,
   Network,
-  Slack as ReactLogo,
-  Server,
+  Palette,
+  PenTool,
   Terminal,
   Workflow,
 } from 'lucide-react';
@@ -17,38 +21,38 @@ const skills = [
   {
     category: 'Frontend',
     items: [
-      { name: 'HTML', icon: Blocks },
-      { name: 'CSS', icon: Blocks },
-      { name: 'JavaScript | TypeScript', icon: FileJson },
-      { name: 'React | Next.js', icon: ReactLogo },
-      { name: 'Vue.js | Nuxt.js', icon: Blocks },
-      { name: 'Tailwind', icon: Blocks },
+      { name: 'HTML', icon: FileCode },
+      { name: 'JavaScript | TypeScript', icon: Code2 },
+      { name: 'React | Next.js', icon: Box },
+      { name: 'Vue.js | Nuxt.js', icon: Box },
+      { name: 'CSS | Tailwind', icon: Palette },
     ],
   },
   {
     category: 'Backend',
     items: [
-      { name: 'PHP | Symfony', icon: Boxes },
-      { name: 'Node.js | Express | Nest.js', icon: Server },
+      { name: 'Symfony | Drupal', icon: FileCode },
+      { name: 'Node.js | Express | Nest.js', icon: Terminal },
       { name: 'API', icon: Network },
-      { name: 'SQL', icon: Workflow },
+      { name: 'SQL | Oracle | Db2', icon: Database },
+      { name: 'ERP (M3)', icon: BrainCircuit },
+      { name: 'Talend', icon: Workflow },
     ],
   },
   {
-    category: 'Déploiement et versionning',
+    category: 'Design',
     items: [
+      { name: 'Figma', icon: Figma },
+      { name: 'Photoshop', icon: Image },
+      { name: 'Illustrator', icon: PenTool },
+    ],
+  },
+  {
+    category: 'Système & Outils',
+    items: [
+      { name: 'Git', icon: FolderGit },
       { name: 'Docker', icon: Container },
-      { name: 'Git | GitHub | GitLab', icon: FolderGit },
-      { name: 'CI/CD', icon: GitBranch },
-    ],
-  },
-  {
-    category: 'Administration Système',
-    items: [
-      { name: 'Linux', icon: Terminal },
-      { name: 'Windows', icon: Terminal },
-      { name: 'Bash', icon: Terminal },
-      { name: 'Serveur', icon: Server },
+      { name: 'Cmd', icon: Command },
     ],
   },
 ];
@@ -65,8 +69,8 @@ const Skills = () => {
         >
           <h2 className='text-4xl font-bold mb-4'>Compétences Techniques</h2>
           <p className='text-zinc-400 max-w-2xl mx-auto'>
-            Une expertise approfondie dans le développement web moderne, du frontend au backend, en passant par le
-            déploiement et l'administration système.
+            Une expertise approfondie dans le développement web moderne, du frontend au backend, compétences et outils
+            métier, ERP.
           </p>
         </motion.div>
 

@@ -35,11 +35,12 @@ const Services = () => {
           className='text-center mb-16'
         >
           <h2 className='text-3xl font-bold mb-4'>Services</h2>
-          <h3 className='text-xl font-semibold mb-2'>Des solutions complètes pour vos projets digitaux.</h3>
+          {/* <h3 className='text-xl font-semibold mb-2'>Des solutions complètes pour vos projets digitaux.</h3>
           <p className='text-zinc-600 max-w-2xl mx-auto'>
             Je vous propose des solutions sur mesure sur les technologies qui correspondent à vos besoins et à vos
             projets.
-          </p>
+          </p> */}
+          <p className='text-zinc-600 max-w-2xl mx-auto'>Des solutions complètes pour vos projets digitaux.</p>
         </motion.div>
 
         <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-8'>
