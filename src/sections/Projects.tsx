@@ -13,7 +13,6 @@ const Projects = () => {
           className='text-center mb-16'
         >
           <h2 className='text-4xl font-bold mb-4 text-white'>Projets représentatifs de mon expertise</h2>
-          <p className='text-zinc-400 max-w-2xl mx-auto'>Une sélection de projets représentatifs de mon expertise.</p>
         </motion.div>
 
         <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-8'>

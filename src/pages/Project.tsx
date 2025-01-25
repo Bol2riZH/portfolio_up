@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { ArrowLeft, ArrowRight, CheckCircle2, ExternalLink, Lightbulb, Trophy, XCircle } from 'lucide-react';
+import { ArrowLeft, ArrowRight, CheckCircle2, Lightbulb, Trophy, XCircle } from 'lucide-react';
 import { Link, useParams } from 'react-router-dom';
 import { projects } from '../data/projects';
 
@@ -74,14 +74,14 @@ const ProjectsPage = () => {
               ))}
             </div>
 
-            <a
+            {/* <a
               href={project.link}
               target='_blank'
               rel='noopener noreferrer'
               className='inline-flex items-center gap-2 text-white bg-zinc-800 px-4 py-2 rounded-lg hover:bg-zinc-700 transition-colors'
             >
               Voir le code <ExternalLink size={16} />
-            </a>
+            </a> */}
           </motion.div>
         </div>
 

@@ -18,7 +18,7 @@ export const projects: Project[] = [
     title: 'PIM (product information management)',
     description: "Développement d'un PIM (Product Information Management) basé sur PIMCORE avec Symfony 4 PHP.",
     tech: ['Symfony', 'PHP', 'PIMCORE', 'Talend', 'Git', 'SQL'],
-    image: '/projects/pimcore/maxresdefault-2.jpg.webp',
+    image: '/projects/pimcore/1.png',
     link: 'https://github.com/yourusername/pim-queguiner',
     fullDescription:
       "Le lancement d'un site e-commerce pour le groupe Quéguiner a nécessité le développement d'un PIM (Product Information Management) pour gérer les données produits. J'ai développé toutes les features nécessaires à l'import et l'intégration des produits vendu par l'entreprise (ERP M3 - stock, prix, etc.) fusionné avec les données fournisseurs (caractéristiques, images, etc.).",
@@ -78,7 +78,7 @@ export const projects: Project[] = [
     title: 'Gestion des retours MDA',
     description: 'Application de gestion des retours client pour une entreprise de menuiserie',
     tech: ['AppScript', 'JavaScript', 'Suite Google'],
-    image: 'https://example.com/image-gestion-retours-mda.jpg',
+    image: '/projects/mda/2.png',
     link: 'https://github.com/yourusername/gestion-retours-mda',
     fullDescription:
       'Application permettant de gérer les retours clients, établissant un workflow clair avec le métier et gérant les interactions entre l’entreprise, le transport et les agences.',

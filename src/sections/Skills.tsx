@@ -35,8 +35,6 @@ const skills = [
       { name: 'Node.js | Express | Nest.js', icon: Terminal },
       { name: 'API', icon: Network },
       { name: 'SQL | Oracle | Db2', icon: Database },
-      { name: 'ERP (M3)', icon: BrainCircuit },
-      { name: 'Talend', icon: Workflow },
     ],
   },
   {
@@ -52,7 +50,9 @@ const skills = [
     items: [
       { name: 'Git', icon: FolderGit },
       { name: 'Docker', icon: Container },
-      { name: 'Cmd', icon: Command },
+      { name: 'Ligne de commande', icon: Command },
+      { name: 'ERP (M3)', icon: BrainCircuit },
+      { name: 'Talend', icon: Workflow },
     ],
   },
 ];

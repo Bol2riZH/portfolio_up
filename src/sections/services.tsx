@@ -40,7 +40,7 @@ const Services = () => {
             Je vous propose des solutions sur mesure sur les technologies qui correspondent à vos besoins et à vos
             projets.
           </p> */}
-          <p className='text-zinc-600 max-w-2xl mx-auto'>Des solutions complètes pour vos projets digitaux.</p>
+          <p className='text-zinc-600 max-w-2xl mx-auto'>Des solutions complètes pour vos projets.</p>
         </motion.div>
 
         <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-8'>

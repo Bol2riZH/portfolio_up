@@ -43,7 +43,7 @@ const Hero: React.FC<HeroProps> = ({ scrollToSection }) => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.7 }}
               >
-                <span>Développeur & Architecte de Solutions Métier</span>
+                <span>Développeur & Architecte de Solutions Métiers</span>
               </motion.h1>
               <motion.p
                 className='text-xl'
