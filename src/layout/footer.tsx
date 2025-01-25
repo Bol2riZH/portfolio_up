@@ -9,7 +9,7 @@ const Footer = () => {
           <div className='text-zinc-400'>© {new Date().getFullYear()} Matthieu REUNGOAT. Tous droits réservés.</div>
           <div className='flex space-x-6'>
             <motion.a
-              href='https://github.com'
+              href='https://github.com/Bol2riZH'
               target='_blank'
               rel='noopener noreferrer'
               whileHover={{ y: -3 }}
@@ -18,7 +18,7 @@ const Footer = () => {
               <Github size={24} />
             </motion.a>
             <motion.a
-              href='https://linkedin.com'
+              href='https://www.linkedin.com/in/matthieu-reungoat'
               target='_blank'
               rel='noopener noreferrer'
               whileHover={{ y: -3 }}

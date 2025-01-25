@@ -51,7 +51,7 @@ export const projects: Project[] = [
     id: 'consultation-compte-client',
     title: 'Consultation compte client',
     description: 'Développement d’une application finance de consultation des transactions clients',
-    tech: ['Symfony 7', 'Docker', 'Oracle', 'Iris', 'SQL'],
+    tech: ['Symfony 7', 'Docker', 'Oracle', 'X3', 'SQL'],
     image: 'https://example.com/image-consultation-compte-client.jpg',
     link: 'https://github.com/yourusername/consultation-compte-client',
     fullDescription:
@@ -77,7 +77,7 @@ export const projects: Project[] = [
     id: 'gestion-retours-mda',
     title: 'Gestion des retours MDA',
     description: 'Application de gestion des retours client pour une entreprise de menuiserie',
-    tech: ['AppScript', 'JavaScript', 'Fullstack'],
+    tech: ['AppScript', 'JavaScript', 'Suite Google'],
     image: 'https://example.com/image-gestion-retours-mda.jpg',
     link: 'https://github.com/yourusername/gestion-retours-mda',
     fullDescription:
