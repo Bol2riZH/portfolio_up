@@ -52,7 +52,7 @@ export const projects: Project[] = [
     title: 'Consultation compte client',
     description: 'Développement d’une application finance de consultation des transactions clients',
     tech: ['Symfony 7', 'Docker', 'Oracle', 'X3', 'SQL'],
-    image: 'https://example.com/image-consultation-compte-client.jpg',
+    image: '/projects/ccc/1.png',
     link: 'https://github.com/yourusername/consultation-compte-client',
     fullDescription:
       'Application permettant la consultation des transactions clients, facilitant la visualisation des transactions (débit - crédit) via une interface claire. Utilisation dans toutes les agences du groupe.',
