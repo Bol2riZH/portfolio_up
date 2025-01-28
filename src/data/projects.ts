@@ -3,7 +3,7 @@ export interface Project {
   title: string;
   description: string;
   tech: string[];
-  image: string;
+  images: string[];
   link: string;
   fullDescription: string;
   features: string[];
@@ -18,8 +18,8 @@ export const projects: Project[] = [
     title: 'PIM (product information management)',
     description: "Développement d'un PIM (Product Information Management) basé sur PIMCORE avec Symfony 4 PHP.",
     tech: ['Symfony', 'PHP', 'PIMCORE', 'Talend', 'Git', 'SQL'],
-    image: '/projects/pimcore/1.png',
-    link: 'https://github.com/yourusername/pim-queguiner',
+    images: ['/projects/pimcore/3.webp', '/projects/pimcore/2.png', '/projects/pimcore/1.png'],
+    link: '',
     fullDescription:
       "Le lancement d'un site e-commerce pour le groupe Quéguiner a nécessité le développement d'un PIM (Product Information Management) pour gérer les données produits. J'ai développé toutes les features nécessaires à l'import et l'intégration des produits vendu par l'entreprise (ERP M3 - stock, prix, etc.) fusionné avec les données fournisseurs (caractéristiques, images, etc.).",
     features: [
@@ -52,8 +52,8 @@ export const projects: Project[] = [
     title: 'Consultation compte client',
     description: 'Développement d’une application finance de consultation des transactions clients',
     tech: ['Symfony 7', 'Docker', 'Oracle', 'X3', 'SQL'],
-    image: '/projects/ccc/1.png',
-    link: 'https://github.com/yourusername/consultation-compte-client',
+    images: ['/projects/ccc/1.png', '/projects/ccc/2.png', '/projects/ccc/3.png'],
+    link: '',
     fullDescription:
       'Application permettant la consultation des transactions clients, facilitant la visualisation des transactions (débit - crédit) via une interface claire. Utilisation dans toutes les agences du groupe.',
     features: [
@@ -78,8 +78,8 @@ export const projects: Project[] = [
     title: 'Gestion des retours MDA',
     description: 'Application de gestion des retours client pour une entreprise de menuiserie',
     tech: ['AppScript', 'JavaScript', 'Suite Google'],
-    image: '/projects/mda/2.png',
-    link: 'https://github.com/yourusername/gestion-retours-mda',
+    images: ['/projects/mda/1.png', '/projects/mda/2.png', '/projects/mda/3.png'],
+    link: '',
     fullDescription:
       'Application permettant de gérer les retours clients, établissant un workflow clair avec le métier et gérant les interactions entre l’entreprise, le transport et les agences.',
     features: [

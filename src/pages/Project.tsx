@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { ArrowLeft, ArrowRight, CheckCircle2, Lightbulb, Trophy, XCircle } from 'lucide-react';
+import { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { projects } from '../data/projects';
 
@@ -7,6 +8,15 @@ const ProjectsPage = () => {
   const { id } = useParams();
   const project = projects.find(p => p.id === id);
   const currentIndex = projects.findIndex(p => p.id === id);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentImageIndex(prev => (prev === (project?.images.length ?? 1) - 1 ? 0 : prev + 1));
+    }, 2500);
+
+    return () => clearInterval(timer);
+  }, [project]);
 
   if (!project) {
     return (
@@ -53,8 +63,32 @@ const ProjectsPage = () => {
         </div>
 
         <div className='grid lg:grid-cols-2 gap-12'>
-          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
-            <img src={project.image} alt={project.title} className='w-full h-[400px] object-cover rounded-xl' />
+          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className='space-y-4'>
+            <div className='relative h-[400px]'>
+              {project.images.map((image, index) => (
+                <motion.img
+                  key={image}
+                  src={image}
+                  alt={`${project.title} - Image ${index + 1}`}
+                  className='w-full h-[400px] object-cover rounded-xl absolute top-0 left-0'
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: index === currentImageIndex ? 1 : 0 }}
+                  transition={{ duration: 0.5 }}
+                />
+              ))}
+            </div>
+
+            <div className='flex justify-center gap-2'>
+              {project.images.map((_, index) => (
+                <button
+                  key={index}
+                  onClick={() => setCurrentImageIndex(index)}
+                  className={`w-2 h-2 rounded-full transition-colors ${
+                    index === currentImageIndex ? 'bg-white' : 'bg-zinc-500'
+                  }`}
+                />
+              ))}
+            </div>
           </motion.div>
 
           <motion.div
