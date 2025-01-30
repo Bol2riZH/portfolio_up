@@ -27,14 +27,17 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
           <div className='absolute inset-0 bg-gradient-to-t from-zinc-900 via-zinc-900/80 to-zinc-900/60 opacity-95'></div>
         </div>
 
-        <div className='absolute inset-0 p-8 flex flex-col justify-end'>
-          <div className='space-y-4'>
-            <h3 className='text-2xl font-semibold text-white'>{project.title}</h3>
-            <p className='text-zinc-200 text-lg'>{project.description}</p>
+        <div className='absolute inset-0 p-4 sm:p-8 flex flex-col justify-end'>
+          <div className='space-y-2 sm:space-y-4'>
+            <h3 className='text-xl sm:text-2xl font-semibold text-white line-clamp-2'>{project.title}</h3>
+            <p className='text-zinc-200 text-base sm:text-lg line-clamp-2'>{project.description}</p>
 
             <div className='flex flex-wrap gap-2'>
               {project.tech.slice(0, 4).map(tech => (
-                <span key={tech} className='text-sm font-medium bg-zinc-800 text-zinc-200 px-3 py-1.5 rounded-full'>
+                <span
+                  key={tech}
+                  className='text-xs sm:text-sm font-medium bg-zinc-800 text-zinc-200 px-2 sm:px-3 py-1 sm:py-1.5 rounded-full'
+                >
                   {tech}
                 </span>
               ))}

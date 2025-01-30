@@ -11,6 +11,10 @@ const ProjectsPage = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [id]);
+
+  useEffect(() => {
     const timer = setInterval(() => {
       setCurrentImageIndex(prev => (prev === (project?.images.length ?? 1) - 1 ? 0 : prev + 1));
     }, 2500);
@@ -63,6 +67,21 @@ const ProjectsPage = () => {
         </div>
 
         <div className='grid lg:grid-cols-2 gap-12'>
+          {/* Title section for mobile */}
+          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className='lg:hidden space-y-6'>
+            <h1 className='text-4xl font-bold'>{project.title}</h1>
+            <p className='text-zinc-400 text-lg'>{project.fullDescription}</p>
+
+            <div className='flex flex-wrap gap-2'>
+              {project.tech.map(tech => (
+                <span key={tech} className='px-3 py-1 bg-zinc-800 rounded-full text-sm text-zinc-300'>
+                  {tech}
+                </span>
+              ))}
+            </div>
+          </motion.div>
+
+          {/* Image section */}
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className='space-y-4'>
             <div className='relative h-[400px]'>
               {project.images.map((image, index) => (
@@ -91,11 +110,12 @@ const ProjectsPage = () => {
             </div>
           </motion.div>
 
+          {/* Title section for desktop */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
-            className='space-y-6'
+            className='hidden lg:block space-y-6'
           >
             <h1 className='text-4xl font-bold'>{project.title}</h1>
             <p className='text-zinc-400 text-lg'>{project.fullDescription}</p>
@@ -107,15 +127,6 @@ const ProjectsPage = () => {
                 </span>
               ))}
             </div>
-
-            {/* <a
-              href={project.link}
-              target='_blank'
-              rel='noopener noreferrer'
-              className='inline-flex items-center gap-2 text-white bg-zinc-800 px-4 py-2 rounded-lg hover:bg-zinc-700 transition-colors'
-            >
-              Voir le code <ExternalLink size={16} />
-            </a> */}
           </motion.div>
         </div>
 
