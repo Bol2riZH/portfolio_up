@@ -51,7 +51,7 @@ export const projects: Project[] = [
     id: 'consultation-compte-client',
     title: 'Consultation compte client',
     description: 'Développement d’une application finance de consultation des transactions clients',
-    tech: ['Symfony 7', 'Docker', 'Oracle', 'X3', 'SQL'],
+    tech: ['Symfony 7', 'Docker', 'Oracle', 'AS400', 'SQL'],
     images: ['/projects/ccc/1.png', '/projects/ccc/2.png', '/projects/ccc/3.png'],
     link: '',
     fullDescription:
@@ -75,7 +75,7 @@ export const projects: Project[] = [
   },
   {
     id: 'gestion-retours-mda',
-    title: 'Gestion des retours MDA',
+    title: 'Gestion des retours produits',
     description: 'Application de gestion des retours client pour une entreprise de menuiserie',
     tech: ['AppScript', 'JavaScript', 'Suite Google'],
     images: ['/projects/mda/1.png', '/projects/mda/2.png', '/projects/mda/3.png'],

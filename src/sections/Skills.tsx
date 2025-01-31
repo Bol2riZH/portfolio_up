@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import {
-  Box,
-  BrainCircuit,
+  Atom,
+  Boxes,
   Code2,
   Command,
   Container,
@@ -23,8 +23,8 @@ const skills = [
     items: [
       { name: 'HTML', icon: FileCode },
       { name: 'JavaScript | TypeScript', icon: Code2 },
-      { name: 'React | Next.js', icon: Box },
-      { name: 'Vue.js | Nuxt.js', icon: Box },
+      { name: 'React | Next.js', icon: Atom },
+      { name: 'Vue.js | Nuxt.js', icon: Boxes },
       { name: 'CSS | Tailwind', icon: Palette },
     ],
   },
@@ -34,7 +34,7 @@ const skills = [
       { name: 'Symfony | Drupal', icon: FileCode },
       { name: 'Node.js | Express | Nest.js', icon: Terminal },
       { name: 'API', icon: Network },
-      { name: 'SQL | Oracle | Db2', icon: Database },
+      { name: 'SQL | Oracle | AS400', icon: Database },
     ],
   },
   {
@@ -51,7 +51,7 @@ const skills = [
       { name: 'Git', icon: FolderGit },
       { name: 'Docker', icon: Container },
       { name: 'Ligne de commande', icon: Command },
-      { name: 'ERP (M3)', icon: BrainCircuit },
+      { name: 'ERP (M3)', icon: Database },
       { name: 'Talend', icon: Workflow },
     ],
   },

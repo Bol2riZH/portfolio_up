@@ -89,7 +89,7 @@ const ProjectsPage = () => {
                   key={image}
                   src={image}
                   alt={`${project.title} - Image ${index + 1}`}
-                  className='w-full h-[400px] object-cover rounded-xl absolute top-0 left-0'
+                  className='w-full h-[400px] object-contain rounded-xl absolute top-0 left-0'
                   initial={{ opacity: 0 }}
                   animate={{ opacity: index === currentImageIndex ? 1 : 0 }}
                   transition={{ duration: 0.5 }}
